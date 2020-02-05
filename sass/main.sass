@@ -1,0 +1,586 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+ul
+	list-style: none
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Roboto', sans-serif
+	overflow-x: hidden
+	color: $text
+
+	a
+		color: #fff
+		text-decoration: none
+		&:hover
+			color: #fff
+
+	h1
+		font-size: 60px
+		color: #ffffff
+		font-family: Cleanvertising, sans-serif
+		font-weight: 700
+
+	header
+		min-height: 765px
+		background: url(../img/header-bg.jpg) no-repeat top center
+		background-size: cover
+		h2
+			font-size: 40px
+			font-weight: 700
+			color: #ffffff
+			line-height: 56px
+	.top_line
+		padding-top: 40px
+	.number
+			font-size: 35px
+			font-weight: 700
+	.top_line-right
+			color: #fff
+			text-align: right
+	h2
+		color: $blue
+		font-family: Cleanvertising, sans-serif
+		font-weight: 300
+		font-size: 50px
+		line-height: 56px
+	.main-header
+		font-family: Cleanvertising, sans-serif
+		margin-top: 80px
+		line-height: 56px
+		font-weight: 700
+		p
+			color: #ffff
+			font-size: 37px
+			letter-spacing: -0.3px
+	.tabs__content
+  	display: none
+
+	.tabs__content.active
+		display: block
+	ul
+		padding: 0
+		margin: 0
+		li
+			display: inline-block
+	.town
+		cursor: pointer
+		font-size: 16px
+		font-weight: 400
+		font-family: roboto, sans-serif
+		text-transform: uppercase
+	.town_item
+		&:hover
+			text-decoration: underline
+	.ul_active
+		color: red
+	.header-tabs
+		max-width: 650px
+		.tab_item
+			font-size: 16px
+			margin: 0
+			padding: 5px 30px
+			padding-bottom: 0px
+			cursor: pointer
+			background-color: rgba(0,0,0,.05)
+			color: #fff
+			font-weight: 700
+			line-height: 62px
+			text-transform: uppercase
+			&:first-child
+				margin-right: -3px
+			&.active
+				background-color: rgba(255,255,255,.45)
+				cursor: default
+		.tabs__content
+			background-color: rgba(255,255,255,.45)
+			max-width: 100%
+			padding: 25px 15px 15px 60px
+			text-transform: uppercase
+			font-size: 18px
+			font-weight: 700
+			line-height: 25px
+
+		&.active
+	.button
+		padding: 16px 35px
+		background-color: $accent
+		border-radius: 5px
+		&:hover
+			text-decoration: none
+			background-color: darken($accent, 3%)
+	.tab-button
+		text-align: right
+		margin: 22px
+		margin-top: 40px
+	.tab-first-p
+		&::before
+			content: ''
+			background: url(../img/hat.png) no-repeat
+			width: 32px
+			height: 20px
+			background-size: 32px 20px
+			position: absolute
+			margin-left: -40px
+			margin-top: 7px
+	.tab-second-p
+		&::before
+			content: ''
+			background: url(../img/burger.png) no-repeat
+			width: 24px
+			height: 18px
+			background-size: 24px 18px
+			position: absolute
+			margin-left: -34px
+			margin-top: 3px
+	.tab-third-p
+		&::before
+			content: ''
+			background: url(../img/globe.png) no-repeat
+			width: 26px
+			height: 26px
+			background-size: 26px 26px
+			position: absolute
+			margin-left: -35px
+			margin-top: -2px
+	.first-section
+		.section-item
+			display: inline-block
+			padding: 55px 125px 45px 0px
+			font-family: Cleanvertising
+			font-size: 17px
+			font-weight: 300
+			color: #003469
+			text-transform: uppercase
+			&.s_i_first
+				margin-left: 40px
+			&.s_i_second
+				&::before
+					content: ''
+					background: url(../img/book.png) no-repeat
+					width: 64px
+					height: 66px
+					background-size: 64px 66px
+					position: absolute
+					margin-left: -90px
+					margin-top: -11px
+			&.s_i_third
+				&::before
+					content: ''
+					background: url(../img/man.png) no-repeat
+					width: 52px
+					height: 66px
+					background-size: 52px 66px
+					position: absolute
+					margin-left: -80px
+					margin-top: -15px
+			&.s_i_fourth
+				padding-right: 0px
+				&::before
+					content: ''
+					background: url(../img/IELTS.png) no-repeat
+					width: 60px
+					height: 60px
+					background-size: 60px 60px
+					position: absolute
+					left: -60px
+					top: 53px
+	.section-big
+		line-height: 29.36px
+		font-size: 22px
+	.first-section
+		background: linear-gradient(to bottom, #c7d9ee, #e8eff7)
+		.container
+			padding: 0
+	.big-ten
+		position: absolute
+		margin-left: -75px
+		font-size: 75px
+		letter-spacing: -12.39px
+		line-height: 33.4px
+		font-weight: 400
+		font-family: roboto, sans-serif
+		margin-top: 7px
+	.blank
+		text-align: center
+		background-color: #f7f7f7
+		padding-bottom: 60px
+		p
+			text-align: left
+			font-size: 16px
+			line-height: 26px
+			font-weight: 400
+			line-height: 24px
+			max-width: 588px
+			color: #333333
+		input
+			width: 100%
+			padding: 16px 0px 10px 10px
+			background-color: #f7f7f7
+			border: 2px solid #e8e8e8
+			border-radius: 5px
+			box-sizing: border-box
+			height: 50px
+			&:hover
+				border: 4px solid $form
+
+		.blank-wrapper
+			border: 5px solid $form
+			position: absolute
+			width: 340px
+			top: -110px
+			left: 800px
+			padding: 28px 20px 40px 20px
+			background-color: darken(#f7f7f7, 2%)
+			border-radius: 7px
+			p
+				color: #666666
+				padding: 0
+				margin: 5px 0px
+		h2
+			text-align: center
+			padding: 60px 0px
+		h3
+			color: $accent
+			text-align: left
+			font-weight: 700
+		.button
+			background-color: $form
+			color: #fff
+			font-weight: 700
+			border: none
+			margin-top: 20px
+		h4
+			color: #444444
+			font-size: 22px
+			padding-bottom: 10px
+			font-weight: 700
+			text-transform: uppercase
+	.article_text_wrapper
+		padding-left: 135px
+		padding-top: 20px
+		padding-bottom: 20px
+	.article-text-first
+		background: url(../img/10-years.png) no-repeat
+		background-size: 99px 100px
+		background-position: 0px 25px
+	.article-text-second
+		background: url(../img/metodic.png) no-repeat
+		background-size: 99px 104px
+		background-position: 0px 28px
+	.article-text-third
+		background: url(../img/location.png) no-repeat
+		background-size: 100px 105px
+		background-position: 0px 15px
+	.article-text-fourth
+		background: url(../img/individual.png) no-repeat
+		background-size: 100px 104px
+		background-position: 0px 25px
+	.black_selection
+		font-weight: 700
+		font-size: 17px
+		line-height: 24px
+	.carousel_s
+		background: url(../img/carousel-bg-1.jpg) no-repeat
+		background-size: cover
+
+		h2
+			text-align: center
+			color: #fff
+			padding: 75px 0px
+	.carousel_styles
+		text-align: center
+		color: #fff
+		p
+			font-size: 15px
+			line-height: 24px
+		h5
+			font-family: roboto, sans-serif
+			font-style: italic
+			padding-bottom: 45px
+			&::before
+				content: ''
+				background: url(../img/shape.png) no-repeat
+				width: 80px
+				height: 1px
+				background-size: 80px 1px
+				position: absolute
+				margin-left: 60px
+				margin-top: 50px
+		.carousel_img_block
+			width: 165px
+			margin: 0 auto
+			height: 165px
+			border-radius: 50%
+			border: 10px solid #5d5d5e
+			margin-bottom: 20px
+
+	.nav-btn
+		height: 47px
+		position: absolute
+		width: 26px
+		cursor: pointer
+		top: 100px !important
+	.prev-slide
+		&::before
+			content: ''
+			background: url(../img/prev.png) no-repeat
+			width: 37px
+			height: 140px
+			background-size: 37px 140px
+			position: absolute
+			margin-left: -2000%
+			margin-top: 30px
+	.next-slide
+		&::before
+			content: ''
+			background: url(../img/next.png) no-repeat top center
+			width: 37px
+			height: 140px
+			background-size: 37px 140px
+			position: absolute
+			margin-left: 1900%
+			margin-top: 30px
+	.owl-prev.disabled
+		pointer-events: none
+		opacity: 0.2
+	.owl-next.disabled
+		pointer-events: none
+		opacity: 0.2
+	.pre-footer-section
+		text-align: center
+		background-color: $accent
+		padding: 47px 0px 35px 0px
+		h2
+			color: #fff
+			font-size: 30px
+			line-height: 36px
+			text-transform: uppercase
+			margin-bottom: 35px
+		.button
+
+			&:hover
+				background-color: darken(#fff, 15%)
+		a
+			text-transform: uppercase
+			background-color: #fff
+			color: #000
+			line-height: 62px
+			font-weight: 700
+	.map
+		padding-top: 45px
+		h3
+			margin: 0px
+			font-family: cleanevertising, sans-serif
+			font-size: 50px
+			line-height: 56px
+			color: #111
+			text-align: center
+		p
+			color: #333
+			font-size: 20px
+			font-family: 'Roboto', sans-serif
+			line-height: 24px
+			margin: 20px 0
+		.tabs
+
+			.tabs__content
+				text-align: left
+		.tabs__caption
+			background-color: $accent
+			padding: 7px
+			padding-right: 0px
+			margin: 0
+			max-width: 430px
+		.tab_item
+			border-radius: 0px
+			background-color: $accent
+			width: 48%
+			padding: 12px 0
+			border-radius: 3px
+			text-align: center
+			color: #fff
+			font-weight: 700
+
+			text-transform: uppercase
+			&:hover
+				cursor: pointer
+			&.active
+				background-color: #fff
+				color: $accent
+				cursor: default
+	#map
+		width: 100%
+		height: 500px
+	.footer
+		text-align: center
+		padding: 80px 0px 180px 0px
+		.number
+			color: $accent
+		p
+			font-size: 18px
+			line-height: 24px
+			padding: 40px 0px
+		h2
+			color: black
+		.button
+			padding: 15px 37px
+			text-transform: uppercase
+			font-weight: 700
+			&:hover
+				background-color: darken($accent, 5%)
+		.tabs
+			color: black
+		.town_item
+			&.active
+				color: $accent !important
+		.button-wrapper
+			margin-top: 45px
+@media (max-width: 1100px)
+	.prev-slide
+		&::before
+			content: ''
+			background: url(../img/prev.png) no-repeat
+			width: 37px
+			height: 140px
+			background-size: 37px 140px
+			position: absolute
+			margin-left: -2000%
+			margin-top: 30px
+	.next-slide
+		&::before
+			display: none
+	.prev-slide
+		&::before
+			display: none
+@media (max-width: 1199.98px)
+	.article_text_wrapper
+		margin-left: 10%
+	.blank-wrapper
+		top: 550px !important
+		left: 110% !important
+		position: relative
+	.article-text-fourth
+		padding-bottom: 540px !important
+	.first-section
+		text-align: center
+	.s_i_first
+		.big-ten
+			left: 180px
+		p
+			width: 100%
+			margin-left: 30%
+	.s_i_third
+		margin-left: 30%
+	.s_i_second
+		margin-left: 22%
+	.s_i_fourth
+		&::before
+			left: 60px !important
+
+@media (max-width: 991.98px)
+	.map
+		h3
+			font-size: 40px !important
+		.tabs
+			margin-left: 20%
+	.blank
+		h2
+			font-size: 40px
+
+	.s_i_first
+		.big-ten
+			left: 130px
+		p
+			width: 100%
+			margin-left: 30%
+	.s_i_second
+		&::before
+			left: 110px
+			top: 65px
+	.s_i_fourth
+		&::before
+			left: 10px !important
+	header
+		.top_line
+			.number
+				font-size: 26px
+		.main-header
+			text-align: center
+		h1
+			font-size: 48px
+		.top_line-right
+			text-align: center
+
+			h1
+				font-size: 48px
+@media (max-width: 768px)
+
+	.blank
+		.blank-wrapper
+			top: -420px !important
+			left: 80% !important
+		.article-text-fourth
+			padding-bottom: 440px !important
+	.s_i_second
+		&::before
+			left: 180px
+			top: 150px
+	.s_i_first
+		p
+			width: 150px
+		.big-ten
+			position: absolute
+			top: 140px
+			left: 210px
+	.s_i_third
+		&::before
+			left: 220px
+			top: 130px
+	.s_i_fourth
+		margin-bottom: 60px
+		&::before
+			left: 95px !important
+			top: 140px !important
+@media (max-width: 575.98px)
+	header
+		.tab-button
+			width: 140%
+			margin-left: -30%
+	.pre-footer-section
+		h2
+			font-size: 26px !important
+	.blank
+		.article_text_wrapper
+			background: none !important
+			margin-left: 0
+			margin-right: 10%
+		.blank-wrapper
+			top: -420px !important
+			left: 40% !important
+
+	header
+		h2
+			text-align: center
+	.header-tabs
+		.tabs__caption
+			li
+				display: block !important
+				width: 100%
+				text-align: center
+		.tab-button
+			text-align: center
